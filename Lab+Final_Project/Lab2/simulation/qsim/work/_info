@@ -1,0 +1,203 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ECE385/Lab2/simulation/qsim
+vControlLogic
+Z1 !s110 1600589717
+!i10b 1
+!s100 `9@_cC4j7S:5]QTIiH24S3
+I>Id>=ib<?>RH4V[jHiP>g3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1600589717
+Z3 8Lab2.vo
+Z4 FLab2.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1600589717.000000
+Z8 !s107 Lab2.vo|
+Z9 !s90 -work|work|Lab2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@control@logic
+vControlLogic_vlg_vec_tst
+R1
+!i10b 1
+!s100 :8M8]<LB>zYm5A9__V]V=3
+Iz=a9^AG6d]^Q>RmeBV14L0
+R2
+R0
+w1600589716
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R10
+R11
+n@control@logic_vlg_vec_tst
+vhard_block
+Z13 !s110 1600820197
+!i10b 1
+!s100 ;5SiRV:]^JhUGhTLWk9cn3
+I5JBo6j23c@2<YmWGbz8L<3
+R2
+R0
+Z14 w1600820195
+R3
+R4
+L0 1423
+R6
+r1
+!s85 0
+31
+Z15 !s108 1600820196.000000
+R8
+R9
+!i113 1
+R10
+R11
+vLab2
+R13
+!i10b 1
+!s100 Y6M;QTdgW54JI;BTKb2I_0
+IbIXIKL_UdEn4`k;J<Kg6Q0
+R2
+R0
+R14
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+R15
+R8
+R9
+!i113 1
+R10
+R11
+n@lab2
+vLab2_vlg_vec_tst
+R13
+!i10b 1
+!s100 G]L@PMXR8?mOKMf:>n:g_1
+IJdO6i[H6]T_z7G1NG_c_H0
+R2
+R0
+w1600820194
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1600820197.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@lab2_vlg_vec_tst
+vtesr_main
+Z16 !s110 1600588929
+!i10b 1
+!s100 FYVD[[CL01MTH[ih<zfB]1
+IfAXLOefD8iCN][968FPaF2
+R2
+R0
+w1600588928
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1600588929.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtesr_main_vlg_vec_tst
+R16
+!i10b 1
+!s100 60RE>_=OV4SgMdngmElYB1
+I;Pn4BLW49Z]hc1HD0daH>3
+R2
+R0
+w1600588927
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R17
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vtest_clock
+Z22 !s110 1600585308
+!i10b 1
+!s100 gACne^jUU?eRUhDVeO<?l1
+In0=KlZ;31`[]A58lneg7S0
+R2
+R0
+Z23 w1600585307
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z24 !s108 1600585308.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtest_clock_vlg_vec_tst
+R22
+!i10b 1
+!s100 c4Q:QH`YkYb7f=R1eji7_2
+INidi@hZ99oHDe5ZefUncR3
+R2
+R0
+R23
+R18
+R19
+R12
+R6
+r1
+!s85 0
+31
+R24
+R20
+R21
+!i113 1
+R10
+R11

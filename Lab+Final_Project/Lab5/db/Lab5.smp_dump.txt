@@ -1,0 +1,23 @@
+
+State Machine - |lab5_toplevel|multiplier:M_inst|control_unit:CU|curr_state
+Name curr_state.ClearA curr_state.Media curr_state.Halt curr_state.Excu_10 curr_state.Excu_81 curr_state.Excu_71 curr_state.Excu_61 curr_state.Excu_51 curr_state.Excu_41 curr_state.Excu_31 curr_state.Excu_21 curr_state.Excu_11 curr_state.Excu_80 curr_state.Excu_70 curr_state.Excu_60 curr_state.Excu_50 curr_state.Excu_40 curr_state.Excu_30 curr_state.Excu_20 curr_state.Init 
+curr_state.Init 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.Excu_20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.Excu_30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.Excu_40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.Excu_50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.Excu_60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.Excu_70 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.Excu_80 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.Excu_11 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.Excu_21 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_31 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_41 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_51 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_61 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_71 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_81 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Excu_10 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Halt 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Media 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.ClearA 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

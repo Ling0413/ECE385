@@ -1,0 +1,234 @@
+|Lab1test
+Z <= 7400:inst8.1
+A => 7400:inst5.3
+A => 7400:inst.2
+C => 7400:inst5.2
+C => 7400:inst1.3
+B => 7400:inst2.3
+B => 7400:inst2.2
+B => 7400:inst.3
+BUS1[0] => Delay:inst4.A0
+BUS1[1] => Delay:inst4.A1
+BUS1[2] => Delay:inst4.A2
+BUS1[3] => Delay:inst4.A3
+BUS1[4] => Delay:inst4.A4
+BUS1[5] => Delay:inst4.A5
+BUS1[6] => Delay:inst4.A6
+BUS1[7] => Delay:inst4.A7
+BUS1[8] => Delay:inst4.A8
+BUS1[9] => Delay:inst4.A9
+BUS1[10] => Delay:inst4.A10
+BUS1[11] => Delay:inst4.A11
+BUS1[12] => Delay:inst4.A12
+BUS1[13] => Delay:inst4.A13
+BUS1[14] => Delay:inst4.A14
+BUS1[15] => Delay:inst4.A15
+BUS2[0] => Delay:inst4.A20
+BUS2[1] => Delay:inst4.A21
+BUS2[2] => Delay:inst4.A22
+BUS2[3] => Delay:inst4.A23
+BUS2[4] => Delay:inst4.A24
+BUS2[5] => Delay:inst4.A25
+BUS2[6] => Delay:inst4.A26
+BUS2[7] => Delay:inst4.A27
+BUS2[8] => Delay:inst4.A28
+BUS2[9] => Delay:inst4.A29
+BUS2[10] => Delay:inst4.A210
+BUS2[11] => Delay:inst4.A211
+BUS2[12] => Delay:inst4.A212
+BUS2[13] => Delay:inst4.A213
+BUS2[14] => Delay:inst4.A214
+BUS2[15] => Delay:inst4.A215
+
+
+|Lab1test|7400:inst8
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|7400:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|7400:inst9
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|7400:inst11
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|7400:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|Delay:inst4
+A_out <= full_adder:inst9.cout
+A7 => full_adder:inst9.a
+A27 => full_adder:inst9.b
+A6 => full_adder:inst8.a
+A26 => full_adder:inst8.b
+A5 => full_adder:inst7.a
+A25 => full_adder:inst7.b
+A4 => full_adder:inst6.a
+A24 => full_adder:inst6.b
+A3 => full_adder:inst5.a
+A23 => full_adder:inst5.b
+A2 => full_adder:inst4.a
+A22 => full_adder:inst4.b
+A1 => full_adder:inst3.a
+A21 => full_adder:inst3.b
+A0 => full_adder:inst2.a
+A20 => full_adder:inst2.b
+A_in => full_adder:inst2.cin
+A15 => ~NO_FANOUT~
+A14 => ~NO_FANOUT~
+A13 => ~NO_FANOUT~
+A12 => ~NO_FANOUT~
+A11 => ~NO_FANOUT~
+A10 => ~NO_FANOUT~
+A9 => ~NO_FANOUT~
+A8 => ~NO_FANOUT~
+A215 => ~NO_FANOUT~
+A214 => ~NO_FANOUT~
+A213 => ~NO_FANOUT~
+A212 => ~NO_FANOUT~
+A211 => ~NO_FANOUT~
+A210 => ~NO_FANOUT~
+A29 => ~NO_FANOUT~
+A28 => ~NO_FANOUT~
+
+
+|Lab1test|Delay:inst4|full_adder:inst9
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst8
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst7
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst6
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst5
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst4
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|Delay:inst4|full_adder:inst2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => cout.IN0
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1test|7400:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|Lab1test|7400:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+

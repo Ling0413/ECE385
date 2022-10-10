@@ -1,0 +1,9 @@
+09:37:57 **** Incremental Build of configuration Nios II for project game ****
+make all 
+Info: Building ../game_bsp/
+D:/QuatusPrime/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../game_bsp/
+[BSP build complete]
+[game build complete]
+
+09:37:58 Build Finished (took 783ms)
+

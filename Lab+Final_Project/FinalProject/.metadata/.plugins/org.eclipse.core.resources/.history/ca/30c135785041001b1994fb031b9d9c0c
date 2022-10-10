@@ -1,0 +1,119 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include "data.h"
+
+/*------------------------------Shortcut------------------------------*/
+
+// Shortcut for keycodes
+const unsigned int up = 26;         // W
+const unsigned int down = 22;       // S
+const unsigned int left = 4;        // A
+const unsigned int right = 7;       // D
+const unsigned int attack = 13;     // J
+const unsigned int dash = 14;       // K
+const unsigned int jump = 44;       // Space
+
+// State index shortcut (also part of prohibition shortcut)
+const int Cx = 0;
+const int Cy = 1;
+const int Vx = 2;
+const int Vy = 3;
+const int Ori = 4;
+const int Cenx = 5;
+const int Ceny = 6;
+const int Offx = 7;
+const int Offy = 8;
+const int CenOffx = 9;
+const int CenOffy = 10;
+const int Health = 11;
+
+
+// Prohibition short cut
+const int p_stand = 7;
+const int p_walk = 8;
+const int p_jump = 9;
+const int p_jump2 = 10;
+const int p_attack = 11;
+
+
+
+/*------------------------------Parameter------------------------------*/
+
+// Boundary parameter
+const int Bound_left = 0;
+const int Bound_right = 640;
+const int Bound_up = 0;
+const int Bound_down = 400;
+
+// Length of parameters
+const int N_keycodes = 4;
+const int N_spirit = 16;
+const int N_state_c = 12;
+const int N_state_b = 12;
+const int N1_event_c = 12;
+const int N2_event_c = 6;
+// const int N1_event_b = 12;
+// const int N2_event_b = 6;
+const int N_prohibit_c = 16;
+const int N_prohibit_b = 16;
+const int N_cooling_c = 5;
+const int N_cooling_b = 5;
+
+// Stage parameters
+const unsigned int stage = 50;
+
+// Velocity unit (pixel/frame)
+const int v_run = 4;
+const int v_dash = 40;
+const int v_fall = 8;
+const int g = 2;    // Per 0.1 second
+
+
+
+/*-----------------------------Event lists---------------------------*/
+
+// Event shortcut
+const int fcount = 3;
+const int fnum = 2;
+const int pvector = 1;
+const int id = 0;
+const int condition_1 = 4;
+const int condition_2 = 5;
+
+/* Event list
+ * X[0] - {unique identifer, prohibition vector, number of frames, counter of frame, condition_index1, condition_index2}
+ *      - prohibition vector: counter from left to right, i-th bit (start from 0) correspods to the i-th index prohibition list
+ * X[i>1] - {frame counter, address and off set information, offset x, offset y, center coordinate x, center coordinate y}
+ */ 
+
+const long long unsigned int event_c_stand[2][6] = {
+    {1, 0x0080, 1, 1, 0, 0},                    // prohibition vector: 0000 0000 1000 0000
+    {1, 0x0000000142a00000, 20, 42, 8, 26}      // Character_stand
+};
+
+const long long unsigned int event_c_walk[6][6] = {
+    {2, 0x0100, 5, 1, 0, 0},                    // prohibition vector: 0000 0001 0000 0000
+    {5, 0x0000014142800000, 20, 40, 9, 24},     // character_run_1
+    {5, 0x0000028142800000, 20, 40, 7, 25},     // character_run_2
+    {5, 0x000003c142800000, 20, 40, 8, 25},     // character_run_3
+    {5, 0x0000050142700000, 20, 39, 8, 25},     // character_run_4
+    {5, 0x0000064132800000, 19, 40, 8, 25}      // character_run_5
+};
+
+const long long unsigned int event_c_jump[6][6] = {
+    {3, 0x0380, 5, 1, 3, 4},                    // prohibition vector: 0000 0011 1000 0000
+    {3, 0x0000077182500000, 24, 37, 15, 23},    // character_jump_1
+    {3, 0x000008f142600000, 20, 38, 8, 25},     // character_jump_2
+    {1, 0x00000a3182500000, 24, 37, 8, 25},     // character_jump_3
+    {1, 0x0001eae172300000, 23, 35, 8, 22},     // character_jump_4
+    {3, 0x0001ec5172500000, 23, 37, 9, 27}      // character_jump_5
+};
+
+const long long unsigned int event_c_attack[4][6] = {
+    {4, 0x0f80, 3, 1, 0, 0},                    // prohibition vector: 0000 1111 1000 0000
+    {3, 0x0001edc112800000, 17, 40, 8, 26},     // character_attack_1
+    {3, 0x0003ca15a2b00000, 90, 43, 68, 28},    // character_attack_2
+    {3, 0x0003cfb5c2b00000, 92, 43, 66, 29}     // character_attack_3
+};

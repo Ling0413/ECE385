@@ -1,0 +1,12 @@
+module Address_Calculator
+(
+	input		logic				LD_PC, ADDR1MUX,
+	input		logic[1:0]		ADDR2MUX,
+	input 	logic[15:0]		IR, from_PC, from_RF, 
+	input		logic[15:0]		from_AC,		// address from Address Calculator
+	output	logic[15:0]		AC_out
+);
+
+
+
+endmodule 

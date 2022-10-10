@@ -1,0 +1,12 @@
+module MemoryIO
+(
+	input		logic				GatePC,			
+	input		logic				GateMDR,			
+	input		logic				GateALU,			
+	input		logic				GateMARMUX,		
+	input 	logic[15:0]		from_bus,		
+	input 	logic[15:0]		from_PC,			
+	input 	logic[15:0]		from_MDR,		
+	input 	logic[15:0]		from_ALU,		
+	output	logic[15:0]		bus_out		
+);

@@ -1,0 +1,55 @@
+#ifndef hepler_h_
+#define hepler_h_
+
+#include "data.h"
+
+void initial(
+    long long unsigned int * spirit, 
+    int * state_c, 
+    int * state_b
+);
+
+
+void write_spirit(long long unsigned int * spirit);
+
+
+void set_state(
+    int x,
+    int y,
+    int ori,
+    long long unsigned int * spirit, 
+    int i
+);
+
+
+void set_address(
+    long long unsigned int data, 
+    long long unsigned int * spirit, 
+    int i
+);
+
+
+void set_prohibition(
+    int prohibit[N_prohibit_c],
+    int p_vector
+);
+
+
+void free_prohibition(
+    int prohibit[N_prohibit_c],
+    int p_vector
+);
+
+
+void set_event(
+    long long unsigned int event_list[N1_event_c][N2_event_c],
+    long long unsigned int event[N1_event_c][N2_event_c],
+);
+
+
+void clean_event(
+    long long unsigned int event_list[N1_event_c][N2_event_c],
+);
+
+
+#endif

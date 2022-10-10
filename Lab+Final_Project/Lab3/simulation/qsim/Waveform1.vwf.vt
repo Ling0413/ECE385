@@ -1,0 +1,106 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/25/2020 18:55:42"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ControlUnit
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ControlUnit_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Clear;
+reg Clock;
+reg Excute;
+reg LoadA;
+reg LoadB;
+// wires                                               
+wire AS0;
+wire AS1;
+wire BS0;
+wire BS1;
+wire TestC0;
+wire TestC1;
+wire TestQ;
+wire TestS;
+
+// assign statements (if any)                          
+ControlUnit i1 (
+// port map - connection between master ports and signals/registers   
+	.AS0(AS0),
+	.AS1(AS1),
+	.BS0(BS0),
+	.BS1(BS1),
+	.Clear(Clear),
+	.Clock(Clock),
+	.Excute(Excute),
+	.LoadA(LoadA),
+	.LoadB(LoadB),
+	.TestC0(TestC0),
+	.TestC1(TestC1),
+	.TestQ(TestQ),
+	.TestS(TestS)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// Clear
+initial
+begin
+	Clear = 1'b0;
+	Clear = #40000 1'b1;
+end 
+
+// Clock
+always
+begin
+	Clock = 1'b0;
+	Clock = #10000 1'b1;
+	#10000;
+end 
+
+// Excute
+initial
+begin
+	Excute = 1'b0;
+	Excute = #100000 1'b1;
+	Excute = #30000 1'b0;
+	Excute = #500000 1'b1;
+	Excute = #270000 1'b0;
+end 
+
+// LoadA
+initial
+begin
+	LoadA = 1'b0;
+end 
+
+// LoadB
+initial
+begin
+	LoadB = 1'b0;
+end 
+endmodule
+

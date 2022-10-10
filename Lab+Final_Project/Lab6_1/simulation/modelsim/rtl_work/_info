@@ -1,0 +1,471 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/11870/Desktop/Lab6_1/simulation/modelsim
+vAddressCalculator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1605063623
+!i10b 1
+!s100 3C>37o1GKiS4gFb9F?;0f1
+IjG4N_RP4:8VU<oZGjOZe22
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AddressCalculator_sv_unit
+S1
+R0
+w1603642019
+8C:/Users/11870/Desktop/Lab6_1/AddressCalculator.sv
+FC:/Users/11870/Desktop/Lab6_1/AddressCalculator.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1605063623.000000
+!s107 C:/Users/11870/Desktop/Lab6_1/AddressCalculator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/AddressCalculator.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/11870/Desktop/Lab6_1
+Z8 tCvgOpt 0
+n@address@calculator
+vALU
+R1
+R2
+!i10b 1
+!s100 <WFG]UjHY^:YXR>`1lNdH1
+I^iKPzcGRQjH2mhHA6WFUk0
+R3
+!s105 ALU_sv_unit
+S1
+R0
+w1603641128
+8C:/Users/11870/Desktop/Lab6_1/ALU.sv
+FC:/Users/11870/Desktop/Lab6_1/ALU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/11870/Desktop/Lab6_1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/ALU.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vBus
+R1
+R2
+!i10b 1
+!s100 U1VE=oF?zUX<I:[_WhNX71
+ILn[<WN2LJU8EeKIc^[?PK3
+R3
+!s105 Bus_sv_unit
+S1
+R0
+w1603542958
+8C:/Users/11870/Desktop/Lab6_1/Bus.sv
+FC:/Users/11870/Desktop/Lab6_1/Bus.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/11870/Desktop/Lab6_1/Bus.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/Bus.sv|
+!i113 1
+R6
+R7
+R8
+n@bus
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+Id@1zNgMRmCfhT;KEIZ5Fm1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1453932322
+8C:/Users/11870/Desktop/Lab6_1/HexDriver.sv
+FC:/Users/11870/Desktop/Lab6_1/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/11870/Desktop/Lab6_1/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vISDU
+R1
+Z9 !s110 1605063624
+!i10b 1
+!s100 EfKbl>RSBeIWYUL@]]OMh3
+Ik3R92nf@M^JVV3DQaofg31
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1604288061
+8C:/Users/11870/Desktop/Lab6_1/ISDU.sv
+FC:/Users/11870/Desktop/Lab6_1/ISDU.sv
+Z10 L0 19
+R4
+r1
+!s85 0
+31
+Z11 !s108 1605063624.000000
+!s107 C:/Users/11870/Desktop/Lab6_1/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/ISDU.sv|
+!i113 1
+R6
+R7
+R8
+n@i@s@d@u
+vlab6_toplevel
+R1
+Z12 !s110 1605063625
+!i10b 1
+!s100 k;XFYEj__@<f`n61h0?<B3
+I1@WNWW?^fOEoC>:0?e[lX2
+R3
+!s105 lab6_toplevel_sv_unit
+S1
+R0
+w1508809841
+8C:/Users/11870/Desktop/Lab6_1/lab6_toplevel.sv
+FC:/Users/11870/Desktop/Lab6_1/lab6_toplevel.sv
+L0 10
+R4
+r1
+!s85 0
+31
+Z13 !s108 1605063625.000000
+!s107 C:/Users/11870/Desktop/Lab6_1/lab6_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/lab6_toplevel.sv|
+!i113 1
+R6
+R7
+R8
+vMem2IO
+R1
+R9
+!i10b 1
+!s100 d<=A`]_5?F8Tz<i9:]04<3
+IinbKh;LCQKI4J]0X;J[3Z3
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+Z14 w1506381592
+8C:/Users/11870/Desktop/Lab6_1/Mem2IO.sv
+FC:/Users/11870/Desktop/Lab6_1/Mem2IO.sv
+Z15 L0 16
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/11870/Desktop/Lab6_1/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/Mem2IO.sv|
+!i113 1
+R6
+R7
+R8
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z16 DXx4 work 6 SLC3_2 0 22 5zG5C4mlAVR<k<Qbm04Gh3
+VKQZIYZoNHfo;j6FVKNoHN3
+r1
+!s85 0
+31
+!i10b 1
+!s100 c2m7WKcaV<L[XVf`30RGj3
+IKQZIYZoNHfo;j6FVKNoHN3
+!i103 1
+S1
+R0
+Z17 w1605063039
+Z18 8C:/Users/11870/Desktop/Lab6_1/memory_contents.sv
+Z19 FC:/Users/11870/Desktop/Lab6_1/memory_contents.sv
+L0 14
+R4
+R11
+Z20 !s107 C:/Users/11870/Desktop/Lab6_1/memory_contents.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/memory_contents.sv|
+!i113 1
+R6
+R7
+R8
+vmemory_parser
+R1
+R16
+DXx4 work 23 memory_contents_sv_unit 0 22 KQZIYZoNHfo;j6FVKNoHN3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 1>513lLg>[MVg[lkREHjP1
+I]RHUgWV]2B>i:Ah?2F[E=1
+!s105 memory_contents_sv_unit
+S1
+R0
+R17
+R18
+R19
+R15
+R4
+R11
+R20
+R21
+!i113 1
+R6
+R7
+R8
+vNZP
+R1
+Z22 !s110 1605063622
+!i10b 1
+!s100 >Rg6Z@1C>=HAJMO7@QfP_1
+I_iTCM;d9>FimanH49f?z00
+R3
+!s105 NZP_sv_unit
+S1
+R0
+w1603682287
+8C:/Users/11870/Desktop/Lab6_1/NZP.sv
+FC:/Users/11870/Desktop/Lab6_1/NZP.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z23 !s108 1605063622.000000
+!s107 C:/Users/11870/Desktop/Lab6_1/NZP.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/NZP.sv|
+!i113 1
+R6
+R7
+R8
+n@n@z@p
+vPC
+R1
+R22
+!i10b 1
+!s100 33AaTgll??`BGLeHg43I51
+IURm3=3Cff9C:kEiNJ=:mY0
+R3
+!s105 PC_sv_unit
+S1
+R0
+w1604048881
+8C:/Users/11870/Desktop/Lab6_1/PC.sv
+FC:/Users/11870/Desktop/Lab6_1/PC.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/11870/Desktop/Lab6_1/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/PC.sv|
+!i113 1
+R6
+R7
+R8
+n@p@c
+vRegister
+R1
+R22
+!i10b 1
+!s100 M`i20DRYH:9_1OEng<=bI3
+I7[`SdcogU]kjNzhEKbYCQ2
+R3
+!s105 Register_sv_unit
+S1
+R0
+w1603682425
+8C:/Users/11870/Desktop/Lab6_1/Register.sv
+FC:/Users/11870/Desktop/Lab6_1/Register.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/11870/Desktop/Lab6_1/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/Register.sv|
+!i113 1
+R6
+R7
+R8
+n@register
+vRegisterFile
+R1
+R22
+!i10b 1
+!s100 ngn]PkeTZ0G`g;49c@keP1
+I^OKeOB9D8ha8P_[dZZ>G61
+R3
+!s105 RegisterFile_sv_unit
+S1
+R0
+w1603597483
+8C:/Users/11870/Desktop/Lab6_1/RegisterFile.sv
+FC:/Users/11870/Desktop/Lab6_1/RegisterFile.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/11870/Desktop/Lab6_1/RegisterFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/RegisterFile.sv|
+!i113 1
+R6
+R7
+R8
+n@register@file
+vslc3
+R1
+R9
+!i10b 1
+!s100 c1`SnT^AoN5R9na`dhjjX3
+IcTil1Jm[G8<C5[@bBmJiN0
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1604288081
+8C:/Users/11870/Desktop/Lab6_1/slc3.sv
+FC:/Users/11870/Desktop/Lab6_1/slc3.sv
+R10
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/11870/Desktop/Lab6_1/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/slc3.sv|
+!i113 1
+R6
+R7
+R8
+XSLC3_2
+R1
+R9
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+I5zG5C4mlAVR<k<Qbm04Gh3
+V5zG5C4mlAVR<k<Qbm04Gh3
+S1
+R0
+R14
+8C:/Users/11870/Desktop/Lab6_1/SLC3_2.sv
+FC:/Users/11870/Desktop/Lab6_1/SLC3_2.sv
+L0 24
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/11870/Desktop/Lab6_1/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/SLC3_2.sv|
+!i113 1
+R6
+R7
+R8
+n@s@l@c3_2
+vtest_memory
+R1
+R9
+!i10b 1
+!s100 AZAU7PQT4]][EEHo>57W43
+IK=Tmj^kMHVg0Y]k6>;O?11
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+w1508442516
+8C:/Users/11870/Desktop/Lab6_1/test_memory.sv
+FC:/Users/11870/Desktop/Lab6_1/test_memory.sv
+L0 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/11870/Desktop/Lab6_1/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/test_memory.sv|
+!i113 1
+R6
+R7
+R8
+vtestbench_week2
+R1
+R12
+!i10b 1
+!s100 AW5S[n43>VCGSGC:];>1S2
+Il<=Yz08Q`C730jPLb^iFi2
+R3
+!s105 testbench_week2_sv_unit
+S1
+R0
+w1605063496
+8C:/Users/11870/Desktop/Lab6_1/testbench_week2.sv
+FC:/Users/11870/Desktop/Lab6_1/testbench_week2.sv
+L0 43
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/11870/Desktop/Lab6_1/testbench_week2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/testbench_week2.sv|
+!i113 1
+R6
+R7
+R8
+vtristate
+R1
+R2
+!i10b 1
+!s100 Akazoo=71mOgoH<gVR_UC0
+I[Y;11HCL^bEQh9a1P5aOc3
+R3
+!s105 tristate_sv_unit
+S1
+R0
+R14
+8C:/Users/11870/Desktop/Lab6_1/tristate.sv
+FC:/Users/11870/Desktop/Lab6_1/tristate.sv
+R15
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/11870/Desktop/Lab6_1/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/11870/Desktop/Lab6_1|C:/Users/11870/Desktop/Lab6_1/tristate.sv|
+!i113 1
+R6
+R7
+R8

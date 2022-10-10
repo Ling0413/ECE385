@@ -1,0 +1,84 @@
+#ifndef DATA_H_
+#define DATA_H_
+
+
+/*------------------------------Shortcut------------------------------*/
+
+// Shortcut for keycodes
+extern const unsigned int up;         // W
+extern const unsigned int down;       // S
+extern const unsigned int left;       // A
+extern const unsigned int right;      // D
+extern const unsigned int attack;     // J
+extern const unsigned int spell;      // K
+extern const unsigned int jump;       // Space
+
+// State index shortcut (also part of prohibition shortcut)
+extern const int Cx;
+extern const int Cy;
+extern const int Vx;
+extern const int Vy;
+extern const int Offx;
+extern const int Offy;
+extern const int Ori;
+extern const int Cenx;
+extern const int Ceny;
+
+// Prohibition short cut
+extern const int p_stand;
+extern const int p_walk;
+extern const int p_jump;
+extern const int p_jump2;
+extern const int p_attack;
+
+
+
+/*------------------------------Parameter------------------------------*/
+
+// Boundary parameter
+extern const int Bound_left;
+extern const int Bound_right;
+extern const int Bound_up;
+extern const int Bound_down;
+
+// Length of parameters
+extern const int N_keycodes;
+extern const int N_spirit;
+extern const int N_state_c;
+extern const int N_state_b;
+extern const int N1_event_c;
+extern const int N2_event_c;
+// extern const int N1_event_b;
+// extern const int N2_event_b;
+extern const int N_prohibit_c;
+extern const int N_prohibit_b;
+extern const int N_cooling_c;
+extern const int N_cooling_b;
+
+// Stage parameters
+extern const unsigned int stage;
+
+// Velocity unit (pixel/frame)
+extern const int v_run;
+extern const int v_dash;
+extern const int v_fall;
+extern const int g;
+
+
+
+/*-----------------------------Event lists---------------------------*/
+
+
+// Event shortcut
+extern const int fcount;
+extern const int fnum;
+extern const int pvector;
+extern const int id;
+extern const int condition_1;
+extern const int condition_2;
+
+extern const long long unsigned int event_c_stand[2][4];
+extern const long long unsigned int event_c_walk[6][4];
+
+
+#endif

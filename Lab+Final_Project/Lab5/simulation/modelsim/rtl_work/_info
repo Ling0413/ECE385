@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ECE385/Lab5/simulation/modelsim
+vadder_substractor
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1603701585
+!i10b 1
+!s100 J7FHI?h0;2RDY2;?RD?hU1
+I8OYz7>EKTb4L3Y7mkHHm:0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 FullAdder_sv_unit
+S1
+R0
+Z5 w1603127945
+Z6 8D:/ECE385/Lab5/FullAdder.sv
+Z7 FD:/ECE385/Lab5/FullAdder.sv
+L0 3
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1603701585.000000
+Z10 !s107 D:/ECE385/Lab5/FullAdder.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/FullAdder.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/ECE385/Lab5
+Z14 tCvgOpt 0
+vcontrol_unit
+R1
+R2
+!i10b 1
+!s100 gHnf3jHeY]IbWS7CAMTES0
+IMAKQlT[UYeO_V=aDRKibR0
+R3
+!s105 ControlUnit_sv_unit
+S1
+R0
+w1603191703
+8D:/ECE385/Lab5/ControlUnit.sv
+FD:/ECE385/Lab5/ControlUnit.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab5/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/ControlUnit.sv|
+!i113 1
+R12
+R13
+R14
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 ;?Xg]AdI3^BOQMQgE2GC@2
+IXmYfAFXE=0j8deda;WBKo1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 38
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+ICM_SGgfM57Sn12C959VlQ2
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1453932322
+8D:/ECE385/Lab5/HexDriver.sv
+FD:/ECE385/Lab5/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1603701584.000000
+!s107 D:/ECE385/Lab5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vlab5_toplevel
+R1
+Z15 !s110 1603701586
+!i10b 1
+!s100 cR>TFf9;MJmZWHCfh^n;Q2
+Ib=RiZ^Uz`mAc<Ig978AIF1
+R3
+!s105 lab5_toplevel_sv_unit
+S1
+R0
+w1603035004
+8D:/ECE385/Lab5/lab5_toplevel.sv
+FD:/ECE385/Lab5/lab5_toplevel.sv
+L0 2
+R8
+r1
+!s85 0
+31
+Z16 !s108 1603701586.000000
+!s107 D:/ECE385/Lab5/lab5_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/lab5_toplevel.sv|
+!i113 1
+R12
+R13
+R14
+vmultiplier
+R1
+R2
+!i10b 1
+!s100 UR=XP8Ba7XdTeNfN``]Hg2
+InJfK7e?oTKF5>eiTMiiR81
+R3
+!s105 Multiplier_sv_unit
+S1
+R0
+w1603128651
+8D:/ECE385/Lab5/Multiplier.sv
+FD:/ECE385/Lab5/Multiplier.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab5/Multiplier.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/Multiplier.sv|
+!i113 1
+R12
+R13
+R14
+vshift_register
+R1
+R2
+!i10b 1
+!s100 c87Dk[02BFCj]eQ=Uz>T11
+IB7@_M89]oz8hMg`HNijd@3
+R3
+!s105 ShiftRegister_sv_unit
+S1
+R0
+w1603038456
+8D:/ECE385/Lab5/ShiftRegister.sv
+FD:/ECE385/Lab5/ShiftRegister.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab5/ShiftRegister.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/ShiftRegister.sv|
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+R15
+!i10b 1
+!s100 Q]3^L0FTf15Z0O_g:2kA83
+IiP^ezEc>Q4YY1P]j[hl;A1
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1602903263
+8D:/ECE385/Lab5/testbench.sv
+FD:/ECE385/Lab5/testbench.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+!s107 D:/ECE385/Lab5/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab5|D:/ECE385/Lab5/testbench.sv|
+!i113 1
+R12
+R13
+R14

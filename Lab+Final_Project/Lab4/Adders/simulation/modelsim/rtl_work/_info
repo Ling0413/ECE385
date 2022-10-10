@@ -1,0 +1,188 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ECE385/Lab4/Adders/simulation/modelsim
+vcarry_select_adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1602520120
+!i10b 1
+!s100 Ralz5@ZmlmW@^:I[?l=TO1
+I;I4<NEiU@;0jj;0^jaBDN3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 carry_select_adder_sv_unit
+S1
+R0
+Z5 w1602514220
+Z6 8D:/ECE385/Lab4/Adders/carry_select_adder.sv
+Z7 FD:/ECE385/Lab4/Adders/carry_select_adder.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1602520120.000000
+Z10 !s107 D:/ECE385/Lab4/Adders/carry_select_adder.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab4/Adders|D:/ECE385/Lab4/Adders/carry_select_adder.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/ECE385/Lab4/Adders
+Z14 tCvgOpt 0
+vFourBits_CAS_adder
+R1
+R2
+!i10b 1
+!s100 IaTB5;RAnM37TiIIX2V^j3
+ISEoD[]nPM@i=Ic:`GCfWQ3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 30
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@four@bits_@c@a@s_adder
+vFourBits_ripple_adder
+R1
+R2
+!i10b 1
+!s100 8`2:Hd8<D1nI1iBVKQXbM3
+I[I?C4^W]_7H85km_KFEnZ2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 65
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@four@bits_ripple_adder
+vfull_adder_b
+R1
+R2
+!i10b 1
+!s100 AS8Q0;m871Yz<he?DOWi[1
+I;dYgWE=I4;XSf;6bQ0CeT3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 87
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+Ieb@:1FNIY;dT3omz?HVjM0
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1453932322
+8D:/ECE385/Lab4/Adders/HexDriver.sv
+FD:/ECE385/Lab4/Adders/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab4/Adders/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab4/Adders|D:/ECE385/Lab4/Adders/HexDriver.sv|
+!i113 1
+R12
+R13
+R14
+n@hex@driver
+vlab4_adders_toplevel
+R1
+R2
+!i10b 1
+!s100 JD[>08GCoFfH65EZ1jaIE3
+IeVJi6<c]`;TDRO@I0C12@1
+R3
+!s105 lab4_adders_toplevel_sv_unit
+S1
+R0
+w1602520053
+8D:/ECE385/Lab4/Adders/lab4_adders_toplevel.sv
+FD:/ECE385/Lab4/Adders/lab4_adders_toplevel.sv
+L0 17
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab4/Adders/lab4_adders_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab4/Adders|D:/ECE385/Lab4/Adders/lab4_adders_toplevel.sv|
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+!s110 1602520121
+!i10b 1
+!s100 Zfe:jMig11]YFmna27aI43
+IgLa_[iSJz;KXSKNzgK;e53
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1602519573
+8D:/ECE385/Lab4/Adders/testbench.sv
+FD:/ECE385/Lab4/Adders/testbench.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/ECE385/Lab4/Adders/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab4/Adders|D:/ECE385/Lab4/Adders/testbench.sv|
+!i113 1
+R12
+R13
+R14

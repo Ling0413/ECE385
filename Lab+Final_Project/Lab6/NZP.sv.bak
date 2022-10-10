@@ -1,0 +1,11 @@
+module RegisterFile
+(
+	input 	logic				Clk,
+	input 	logic				LD_CC, LD_BEN, 
+	input		logic[15:0]		from_bus, from_IR,
+	output	logic				ben
+);
+
+	always_comb
+
+endmodule 

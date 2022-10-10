@@ -1,0 +1,471 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ECE385/Lab6/simulation/modelsim
+vAddressCalculator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1604073193
+!i10b 1
+!s100 3C>37o1GKiS4gFb9F?;0f1
+Ic9_1^PQzZ5lmC52lmTgdm0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AddressCalculator_sv_unit
+S1
+R0
+w1603642019
+8D:/ECE385/Lab6/AddressCalculator.sv
+FD:/ECE385/Lab6/AddressCalculator.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1604073193.000000
+!s107 D:/ECE385/Lab6/AddressCalculator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/AddressCalculator.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/ECE385/Lab6
+Z8 tCvgOpt 0
+n@address@calculator
+vALU
+R1
+R2
+!i10b 1
+!s100 <WFG]UjHY^:YXR>`1lNdH1
+IZG]lJnQnP:mjgaCU];FTB1
+R3
+!s105 ALU_sv_unit
+S1
+R0
+w1603641128
+8D:/ECE385/Lab6/ALU.sv
+FD:/ECE385/Lab6/ALU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/ECE385/Lab6/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/ALU.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vBus
+R1
+R2
+!i10b 1
+!s100 U1VE=oF?zUX<I:[_WhNX71
+Im;1R_ndRgiS:lMLEDnG>^1
+R3
+!s105 Bus_sv_unit
+S1
+R0
+w1603542958
+8D:/ECE385/Lab6/Bus.sv
+FD:/ECE385/Lab6/Bus.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/ECE385/Lab6/Bus.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/Bus.sv|
+!i113 1
+R6
+R7
+R8
+n@bus
+vHexDriver
+R1
+Z9 !s110 1604073192
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+Ic8WJWOA3c:YmdzmQWa]fA0
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1453932322
+8D:/ECE385/Lab6/HexDriver.sv
+FD:/ECE385/Lab6/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1604073192.000000
+!s107 D:/ECE385/Lab6/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vISDU
+R1
+R9
+!i10b 1
+!s100 i`4>_h<ZhlL5Y1XX7XIHj1
+In5TTbnA9FeVTim<:^j98j2
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1604044907
+8D:/ECE385/Lab6/ISDU.sv
+FD:/ECE385/Lab6/ISDU.sv
+Z11 L0 19
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/ISDU.sv|
+!i113 1
+R6
+R7
+R8
+n@i@s@d@u
+vlab6_toplevel
+R1
+Z12 !s110 1604073194
+!i10b 1
+!s100 k;XFYEj__@<f`n61h0?<B3
+I`T5Te]MMJmTC4]biDmmoa0
+R3
+!s105 lab6_toplevel_sv_unit
+S1
+R0
+w1603644120
+8D:/ECE385/Lab6/lab6_toplevel.sv
+FD:/ECE385/Lab6/lab6_toplevel.sv
+L0 10
+R4
+r1
+!s85 0
+31
+Z13 !s108 1604073194.000000
+!s107 D:/ECE385/Lab6/lab6_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/lab6_toplevel.sv|
+!i113 1
+R6
+R7
+R8
+vMem2IO
+R1
+R9
+!i10b 1
+!s100 d<=A`]_5?F8Tz<i9:]04<3
+IdhD7[?UcTaWiQQ<n0B<`Z0
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+Z14 w1506381592
+8D:/ECE385/Lab6/Mem2IO.sv
+FD:/ECE385/Lab6/Mem2IO.sv
+Z15 L0 16
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/Mem2IO.sv|
+!i113 1
+R6
+R7
+R8
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z16 DXx4 work 6 SLC3_2 0 22 8F>^WFCJmMZL0^ezoSkI]3
+V@XB@Ea1[c^NW>QLbQPR0Z1
+r1
+!s85 0
+31
+!i10b 1
+!s100 c2m7WKcaV<L[XVf`30RGj3
+I@XB@Ea1[c^NW>QLbQPR0Z1
+!i103 1
+S1
+R0
+Z17 w1604073064
+Z18 8D:/ECE385/Lab6/memory_contents.sv
+Z19 FD:/ECE385/Lab6/memory_contents.sv
+L0 14
+R4
+R13
+Z20 !s107 D:/ECE385/Lab6/memory_contents.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/memory_contents.sv|
+!i113 1
+R6
+R7
+R8
+vmemory_parser
+R1
+R16
+DXx4 work 23 memory_contents_sv_unit 0 22 @XB@Ea1[c^NW>QLbQPR0Z1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 744B[g>P4=Q9zVQXU8>HF2
+IKkEEaN3hPzN3^h6hDIY?D1
+!s105 memory_contents_sv_unit
+S1
+R0
+R17
+R18
+R19
+R15
+R4
+R13
+R20
+R21
+!i113 1
+R6
+R7
+R8
+vNZP
+R1
+R12
+!i10b 1
+!s100 >Rg6Z@1C>=HAJMO7@QfP_1
+IoFD3^I4z<dm^77BZWkoS90
+R3
+!s105 NZP_sv_unit
+S1
+R0
+w1603682287
+8D:/ECE385/Lab6/NZP.sv
+FD:/ECE385/Lab6/NZP.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/ECE385/Lab6/NZP.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/NZP.sv|
+!i113 1
+R6
+R7
+R8
+n@n@z@p
+vPC
+R1
+R9
+!i10b 1
+!s100 33AaTgll??`BGLeHg43I51
+IHbde^Fe=JP6zoKj1TLRUi1
+R3
+!s105 PC_sv_unit
+S1
+R0
+w1604048881
+8D:/ECE385/Lab6/PC.sv
+FD:/ECE385/Lab6/PC.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/PC.sv|
+!i113 1
+R6
+R7
+R8
+n@p@c
+vRegister
+R1
+R2
+!i10b 1
+!s100 M`i20DRYH:9_1OEng<=bI3
+IY@R4fL@=2nfGb5[O7kP543
+R3
+!s105 Register_sv_unit
+S1
+R0
+w1603682425
+8D:/ECE385/Lab6/Register.sv
+FD:/ECE385/Lab6/Register.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/ECE385/Lab6/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/Register.sv|
+!i113 1
+R6
+R7
+R8
+n@register
+vRegisterFile
+R1
+R2
+!i10b 1
+!s100 ngn]PkeTZ0G`g;49c@keP1
+IflHE7@C41H<Uo0HVFb[lI1
+R3
+!s105 RegisterFile_sv_unit
+S1
+R0
+w1603597483
+8D:/ECE385/Lab6/RegisterFile.sv
+FD:/ECE385/Lab6/RegisterFile.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/ECE385/Lab6/RegisterFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/RegisterFile.sv|
+!i113 1
+R6
+R7
+R8
+n@register@file
+vslc3
+R1
+R12
+!i10b 1
+!s100 ;4fiCjE_Wf<HomPg[lJJ_3
+IBDNL3R;cG8E:fLAN6EcgE0
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1604056500
+8D:/ECE385/Lab6/slc3.sv
+FD:/ECE385/Lab6/slc3.sv
+R11
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/ECE385/Lab6/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/slc3.sv|
+!i113 1
+R6
+R7
+R8
+XSLC3_2
+R1
+R9
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+I8F>^WFCJmMZL0^ezoSkI]3
+V8F>^WFCJmMZL0^ezoSkI]3
+S1
+R0
+R14
+8D:/ECE385/Lab6/SLC3_2.sv
+FD:/ECE385/Lab6/SLC3_2.sv
+L0 24
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/SLC3_2.sv|
+!i113 1
+R6
+R7
+R8
+n@s@l@c3_2
+vtest_memory
+R1
+R9
+!i10b 1
+!s100 AZAU7PQT4]][EEHo>57W43
+I;jP8HS3RR^W3nC[UE^50S1
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+w1508442516
+8D:/ECE385/Lab6/test_memory.sv
+FD:/ECE385/Lab6/test_memory.sv
+L0 22
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/test_memory.sv|
+!i113 1
+R6
+R7
+R8
+vtestbench_week2
+R1
+R12
+!i10b 1
+!s100 =DD^PdFLE6FFzTdf_jKRV1
+ID3A0?mYO6EUdzZMdnCGA]2
+R3
+!s105 testbench_week2_sv_unit
+S1
+R0
+w1604073157
+8D:/ECE385/Lab6/testbench_week2.sv
+FD:/ECE385/Lab6/testbench_week2.sv
+L0 43
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/ECE385/Lab6/testbench_week2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/testbench_week2.sv|
+!i113 1
+R6
+R7
+R8
+vtristate
+R1
+R9
+!i10b 1
+!s100 Akazoo=71mOgoH<gVR_UC0
+I3JbMm0:We8:`_hO?nlGD80
+R3
+!s105 tristate_sv_unit
+S1
+R0
+R14
+8D:/ECE385/Lab6/tristate.sv
+FD:/ECE385/Lab6/tristate.sv
+R15
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/ECE385/Lab6/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ECE385/Lab6|D:/ECE385/Lab6/tristate.sv|
+!i113 1
+R6
+R7
+R8

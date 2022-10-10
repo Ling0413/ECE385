@@ -1,0 +1,25 @@
+/*------------------------- Memory block for boss graph -------------------------*/ 
+ 
+module  RAM_Boss
+(
+		input [18:0] read_address,
+		input Clk,
+		output logic [3:0] data_Out
+);
+
+	// mem has width of 3 bits and a total of 400 addresses
+	// [<number of bits per address - 1> : 0] mem [0 : <the number of address - 1>]
+	logic [3:0] mem [0:459263];
+	
+
+	initial
+	begin
+		$readmemh("sprite_bytes/boss.txt", mem);
+	end
+
+
+	always_ff @ (posedge Clk) begin
+		data_Out<= mem[read_address];
+	end
+
+endmodule

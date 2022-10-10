@@ -1,0 +1,20 @@
+module Contact (
+	// Avalon Clock Input
+	input logic CLK,
+	
+	// Avalon Reset Input
+	input logic RESET,
+	
+	// Avalon-MM Slave Signals
+	input  logic AVL_READ,					// Avalon-MM Read
+	input  logic AVL_WRITE,					// Avalon-MM Write
+	input  logic AVL_CS,						// Avalon-MM Chip Select
+	input  logic [7:0] AVL_BYTE_EN,		// Avalon-MM Byte Enable
+	input  logic [4:0] AVL_ADDR,			// Avalon-MM Address
+	input  logic [63:0] AVL_WRITEDATA,	// Avalon-MM Write Data
+	output logic [63:0] AVL_READDATA,	// Avalon-MM Read Data
+	
+	// Conduit signals
+	input  logic [63:0] IMPORT_DATA,		// Import Conduit Signal from toplevel
+	output logic [63:0] EXPORT_DATA		// Exported Conduit Signal to toplevel
+);

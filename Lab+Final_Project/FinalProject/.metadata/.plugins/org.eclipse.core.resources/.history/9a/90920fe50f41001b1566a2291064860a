@@ -1,0 +1,168 @@
+/*
+    Functions for character.
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+#include "character.h"
+#include "helper.h"
+
+// Manage the movement of character
+void movement(
+    int state_c[N_state_c],
+    long long unsigned int event_c[N1_event_c][N2_event_c],
+    int prohibit_c[N_prohibit_c],
+    int cooling_c[N_cooling_c],
+    char keycodes[N_keycodes],
+    int clock
+)
+{
+    int flag = 0;   // 1 means left, 2 means right, 0 means no A-press and D-press
+
+    // Find most current A-press or D-press
+    for (int i = 0; i < 4; i++) {
+        if (keycodes[i] == left) {
+            flag = 1;
+            break;
+        }
+        if (keycodes[i] == right) {
+            flag = 2;
+            break;
+        }
+    }
+
+    // Update Vx
+    if (flag == 1 && prohibit_c[Vx] == 0) {
+        state_c[Vx] = - v_run;
+        state_c[Ori] = 0;
+    } else if (flag == 2 && prohibit_c[Vx] == 0) {
+        state_c[Vx] = v_run;
+        state_c[Ori] = 1;
+    } else {
+        state_c[Vx] = 0;
+    }
+
+    // Update Vy
+    if (state_c[Vy] < 0 && prohibit_c[Vy] == 0) {
+        if (clock == 0) {
+            state_c[Vy] += g;
+        }
+    }
+    if (state_c[Vy] >= 0 && prohibit_c[Vy] == 0) {
+        state_c[Vy] = v_fall;
+    }
+
+    // Update x coordinate
+    state_c[Cx] += state_c[Vx];
+    if (state_c[Cx] <= Bound_left) {
+        state_c[Cx] = Bound_left;
+        state_c[Vx] = 0;
+    }
+    if (state_c[Cx] + state_c[Offx] >= Bound_right) {
+        state_c[Cx] = Bound_right - state_c[Offx] - 1;
+        state_c[Vx] = 0;
+    }
+
+    // Update x coordinate
+    state_c[Cy] += state_c[Vy];
+    if (state_c[Cy] <= Bound_up) {
+        state_c[Cy] = Bound_up;
+        state_c[Vy] = v_fall;
+    }
+    if (state_c[Cy] + state_c[Offy] >= Bound_down) {
+        state_c[Cy] = Bound_down - state_c[Offy];
+        state_c[Vy] = 0;
+    }
+}
+
+
+/* Update current event list, do following things:
+ * 1. If frame counter is larger than number of frames, free prohibition list and reset event list, return
+ * 2. If counter of current frame is zero, increment the frame counter by 1, update state accordingly, return
+ * 3. Subtract the counter of current frame by 1
+ */
+void update_event(
+    int state_c[N_state_c],
+    long long unsigned int event_c[N1_event_c][N2_event_c],
+    int prohibit_c[N_prohibit_c],
+    int cooling_c[N_cooling_c],
+    char keycodes[N_keycodes],
+    int clock
+)
+{
+    int index = event_c[0][fcount];
+
+    // If counter of current frame is zero
+    if (event_c[index][0] == 0){
+        // If frame counter is larger than or equal to number of frames
+        if (index >= event_c[0][fnum]) {
+            free_prohibition(prohibit_c, event_c[0][pvector]);
+            clean_event(event_c);
+            return;
+        } else {
+            event_c[0][fcount] += 1;
+            state_c[Offx] = event_c[index+1][2];
+            state_c[Offy] = event_c[index+1][3];
+            // state_c[Cenx] = event_c[index+1][4];
+            // state_c[Ceny] = event_c[index+1][5];
+        } 
+    }
+
+    // Subtract the counter of current frame by 1
+    if (index != condition_1 && index != condition_2){
+        event_c[index][0] += 1;
+    }
+}
+
+
+// Change the current event
+void change_event(
+    int state_c[N_state_c],
+    long long unsigned int event_c[N1_event_c][N2_event_c],
+    int prohibit_c[N_prohibit_c],
+    int cooling_c[N_cooling_c],
+    char keycodes[N_keycodes],
+    int clock
+)
+{
+    // Stand
+    if ((keycodes[0] == 0) && (prohibit_c[p_stand] == 0)) {
+        set_event(event_c, event_c_stand);
+        set_prohibition(prohibit_c, event_c[0][pvector]);
+        state_c[Offx] = event_c[1][2];
+        state_c[Offy] = event_c[1][3];
+        // *TODO* Remeber also to update Cx and Cy!!!
+    }
+
+    // Walk 
+    if ((keycodes[0] == left || keycodes[0] == right) && (prohibit_c[p_walk] == 0)) {
+        set_event(event_c, event_c_walk);
+        set_prohibition(prohibit_c, event_c[0][pvector]);
+        state_c[Offx] = event_c[1][2];
+        state_c[Offy] = event_c[1][3];
+        // *TODO* Remeber also to update Cx and Cy!!!
+    }
+
+    // Jump 
+
+
+    // Attack
+}
+
+
+// Main function of controlling character
+void character_main(
+    int state_c[N_state_c],
+    long long unsigned int event_c[N1_event_c][N2_event_c],
+    int prohibit_c[N_prohibit_c],
+    int cooling_c[N_cooling_c],
+    char keycodes[N_keycodes],
+    int clock
+)
+{
+    update_event(state_c, event_c, prohibit_c, cooling_c, keycodes, clock);
+    change_event(state_c, event_c, prohibit_c, cooling_c, keycodes, clock);
+    movement(state_c, event_c, prohibit_c, cooling_c, keycodes, clock);
+}

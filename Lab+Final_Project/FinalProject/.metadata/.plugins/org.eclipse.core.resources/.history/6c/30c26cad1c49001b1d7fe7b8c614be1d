@@ -1,0 +1,123 @@
+#ifndef DATA_H_
+#define DATA_H_
+
+
+/*------------------------------Shortcut------------------------------*/
+
+extern volatile unsigned int * GameControl_PTR;
+
+// Shortcut for keycodes
+extern const unsigned int up;         // W
+extern const unsigned int down;       // S
+extern const unsigned int left;       // A
+extern const unsigned int right;      // D
+extern const unsigned int attack;     // J
+extern const unsigned int dash;      // K
+extern const unsigned int jump;       // Space
+
+// State index shortcut (also part of prohibition shortcut)
+extern const int Cx;
+extern const int Cy;
+extern const int Vx;
+extern const int Vy;
+extern const int Offx;
+extern const int Offy;
+extern const int Ori;
+extern const int Cenx;
+extern const int Ceny;
+extern const int CenOffx;
+extern const int CenOffy;
+extern const int Health;
+
+extern const int skill;
+extern const int SparkF;
+extern const int c_stiff;
+extern const int c_hitc;
+extern const int c_hitb;
+
+// Prohibition short cut
+extern const int p_stand;
+extern const int p_walk;
+extern const int p_jump;
+extern const int p_jump2;
+extern const int p_attack;
+extern const int p_fall;
+extern const int p_dash;
+
+extern const int p_spark;
+extern const int p_spine;
+extern const int p_explosion;
+extern const int p_health;
+
+// Cooling shortcut
+extern const int c_attack;
+extern const int c_dash;
+
+// System flag shortcut
+extern const int f_inair;
+extern const int f_dash;
+extern const int f_spark_ori;
+extern const int f_spell;
+
+
+/*------------------------------Parameter------------------------------*/
+
+// Boundary parameter
+extern const int Bound_left;
+extern const int Bound_right;
+extern const int Bound_up;
+extern const int Bound_down;
+
+// Length of parameters
+extern const int N_keycodes;
+extern const int N_spirit;
+extern const int N_state_c;
+extern const int N_state_b;
+extern const int N1_event_c;
+extern const int N2_event_c;
+extern const int N1_event_b;
+extern const int N2_event_b;
+extern const int N_prohibit_c;
+extern const int N_prohibit_b;
+extern const int N_cooling_c;
+extern const int N_cooling_b;
+extern const int N_system_flage;
+extern const int N_boss_flage;
+
+// Stage parameters
+extern const unsigned int stage;
+
+// Velocity unit (pixel/frame)
+extern const int v_run;
+extern const int v_dash;
+extern const int v_fall;
+extern const int g;
+
+
+
+/*-----------------------------Event lists---------------------------*/
+
+
+// Event shortcut
+extern const int fcount;
+extern const int fnum;
+extern const int pvector;
+extern const int id;
+extern const int condition_1;
+extern const int condition_2;
+
+extern const long long unsigned int event_c_stand[2][6];
+extern const long long unsigned int event_c_walk[6][6];
+extern const long long unsigned int event_c_jump[4][6];
+extern const long long unsigned int event_c_fall[3][6];
+extern const long long unsigned int event_c_attack[4][6];
+extern const long long unsigned int event_c_dash[2][6];
+
+extern const long long unsigned int event_b_stand[7][6];
+extern const long long unsigned int event_b_dash[8][6];
+extern const long long unsigned int event_b_spine[11][6];
+extern const long long unsigned int event_b_spark[7][6];
+
+extern const long long unsigned int event_s_spine[8][6];
+
+#endif

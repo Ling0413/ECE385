@@ -1,0 +1,101 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/20/2020 16:12:27"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ControlLogic
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ControlLogic_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Compare;
+reg FETCH;
+reg LDSBR;
+reg STORE;
+// wires                                               
+wire SelectA;
+wire SelectB0;
+wire SelectB1;
+wire test1;
+wire test2;
+wire test3;
+wire test4;
+
+// assign statements (if any)                          
+ControlLogic i1 (
+// port map - connection between master ports and signals/registers   
+	.Compare(Compare),
+	.FETCH(FETCH),
+	.LDSBR(LDSBR),
+	.SelectA(SelectA),
+	.SelectB0(SelectB0),
+	.SelectB1(SelectB1),
+	.STORE(STORE),
+	.test1(test1),
+	.test2(test2),
+	.test3(test3),
+	.test4(test4)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// Compare
+always
+begin
+	Compare = 1'b0;
+	Compare = #25000 1'b1;
+	#25000;
+end 
+
+// FETCH
+always
+begin
+	FETCH = 1'b0;
+	FETCH = #100000 1'b1;
+	#100000;
+end 
+
+// LDSBR
+initial
+begin
+	repeat(2)
+	begin
+		LDSBR = 1'b0;
+		LDSBR = #200000 1'b1;
+		# 200000;
+	end
+	LDSBR = 1'b0;
+end 
+
+// STORE
+always
+begin
+	STORE = 1'b0;
+	STORE = #50000 1'b1;
+	#50000;
+end 
+endmodule
+

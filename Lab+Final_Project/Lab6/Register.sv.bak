@@ -1,0 +1,11 @@
+module register_N
+(
+	
+)
+
+
+always_ff @ (posedge Clk)
+	begin
+			if (Aload)
+				X <= Sum[8];
+	end
